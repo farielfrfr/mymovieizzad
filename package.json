@@ -1,16 +1,13 @@
 {
-  "dependencies": {
-    "electron": "^45.0.0"
-  },
   "name": "movie-plan-application",
   "version": "1.0.0",
-  "description": "",
+  "description": "MyMovie - Movie Plan Application (Electron)",
   "main": "main.js",
-  "devDependencies": {
-    "electron": "^45.0.0"
-  },
   "scripts": {
     "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^45.0.0"
   },
   "keywords": [],
   "author": "",
