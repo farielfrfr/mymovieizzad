@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MyMovie - Watchlist Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>My Movie Watchlist Manager</h1>
+  
+  <div class="card">
+    <h2>Add / Edit Watchlist Movie</h2>
+    <form id="crudForm">
+      <input type="hidden" id="editId" />
+      <div class="input-group">
+        <input type="text" id="inputTitle" placeholder="Movie Title" required />
+        <input type="text" id="inputGenre" placeholder="Genre (e.g. Action)" required />
+        <input type="text" id="inputRuntime" placeholder="Runtime (e.g. 120 min)" required />
+        <select id="inputStatus">
+          <option value="Plan to Watch">Plan to Watch</option>
+          <option value="Watching">Watching</option>
+          <option value="Completed">Completed</option>
+        </select>
+      </div>
+      <div class="input-group" style="margin-top: 10px;">
+        <input type="text" id="inputNotes" placeholder="Personal Notes / Review" style="width: 70%;" />
+        <button type="submit" id="saveRecordBtn">Save Record</button>
+        <button type="button" id="cancelEditBtn" style="display:none; background-color:#757575;">Cancel</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="card">
+    <h2>Saved Watchlist Items</h2>
+    <div id="watchlistContainer"></div>
+  </div>
+
+  <script src="watchlist.js"></script>
+</body>
+</html>
